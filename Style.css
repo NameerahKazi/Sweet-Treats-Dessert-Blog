@@ -1,0 +1,96 @@
+/* styles.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf5;
+  }
+  
+  .navbar {
+    background-color: #feeff5 !important;
+  }
+  
+  .navbar-brand {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #770030 !important;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 17px;
+    font-weight: bold;
+    color: #770030 !important;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #c6538c !important;
+  }
+  
+  .hero {
+    background-image: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  .hero > .text-center {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  .card {
+    background-color: #feeff5;
+    border: 1px solid #eac8d5; /* Soft border added */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #c6004f;
+    border-color: #e83e8c;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #d63384;
+    border-color: #d63384;
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background-color: #f7e6d3;
+    padding: 20px;
+    text-align: center;
+  }
+  

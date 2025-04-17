@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://www.svgrepo.com/show/419389/cupcake-dessert-gift.svg" type="image/png">
+  <title>Sweet Treats | Dessert Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Sweet Treats</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#desserts">Desserts</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="text-center">
+      <h1 class="display-4 fw-bold">Delicious Homemade Dessert Recipes</h1>
+      <p class="lead">From Chocolate Cakes to Fruity Delights, We’ve Got It All!</p>
+    </div>
+  </header>
+
+  <section class="container py-5" id="desserts">
+    <h2 class="text-center mb-5">Explore Our Desserts</h2>
+    <div class="row" id="dessertCards">
+      <!-- Dessert cards will be populated here by JavaScript -->
+    </div>
+  </section>
+
+  <div class="modal fade" id="recipeModal" tabindex="-1" aria-labelledby="recipeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="recipeModalLabel">Recipe Title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="recipeContent">
+          <!-- Recipe content will be inserted here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Sweet Treats Blog | Created by Nameerah Kazi</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
